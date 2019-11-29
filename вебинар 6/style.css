@@ -1,0 +1,835 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Open Sans Bold";
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Regular";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Medium";
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+.clr {
+    clear: both;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.header-content {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1050px) {
+    .header-content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1050px) {
+    .logo {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 800px) {
+    .header-item.work_time {
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+}
+.logo {
+    display: block;
+}
+
+.header-item {
+    padding-left: 60px;
+    padding-top: 5px;
+    height: 51px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: #6a6a6a;
+    box-sizing: border-box;
+}
+
+.text {
+    font-family: sans-serif;
+    font-weight: 700;
+
+}
+
+.work_time {
+    background: url(img/clock.png) no-repeat left center;
+}
+
+.mail_us {
+    background: url(img/mail.png) no-repeat left center;
+}
+
+.call_us {
+    background: url(img/mobile.png) no-repeat left center;
+}
+
+.line {
+    background-color: #ededed;
+    height: 2px;
+    margin-top: 20px;
+}
+
+.menu {
+    float: left;
+}
+
+.menu .menu-list {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.menu-link {
+    text-decoration: none;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 20px;
+    color: #6c6c6c;
+    padding: 0 20px;
+    height: 90px;
+    line-height: 90px;
+}
+
+.menu .menu-list .menu-link:hover {
+    color: #262626;
+}
+
+.social_networks {
+    float: right;
+}
+
+.social_networks a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 23px;
+    color: #191919;
+    margin: 0 5px;
+    height: 90px;
+    line-height: 90px;
+    transition-duration: 0.2s;
+}
+
+.social_networks a:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.man {
+    margin: 0 auto;
+}
+
+.man img {
+    max-width: 1600px;
+}
+
+.man .man-text {
+    max-width: 524px;
+    text-align: center;
+    margin-left: 150px;
+    margin-top: -360px;
+}
+
+.readMore1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.readMore1 button {
+    background-color: #1a9bdc;
+    width: 166px;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 18.25px;
+    transition-duration: .5s;
+}
+
+.readMore1 button:hover {
+    background-color: #37c3a8;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+body .benefits .benefitsInside {
+    width: 1600px;
+    margin: 0 auto;
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+}
+
+body .benefits .benefitsInside .benefitUnit {
+    padding: 60px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body .benefits .benefitsInside .benefitUnit .benefitIcon {
+    width: 75px;
+    height: 75px;
+    background-size: contain;
+    transition-duration: 0.3s;
+}
+
+body .benefits .benefitsInside .benefitUnit .benefitIcon:hover {
+    transform: scale(1.2, 1.2);
+}
+
+body .benefits .benefitsInside .benefitUnit .bestTreatment {
+    background: url(img/best-treatment.png) no-repeat center center;
+}
+
+.unit1 {
+    background: #43b1d2;
+}
+
+.unit2 {
+    background: #3fb6c6;
+}
+
+.unit3 {
+    background: #3cbbbb;
+}
+
+.unit4 {
+    background: #37c3a8;
+}
+
+body .benefits .benefitsInside .benefitUnit .emergencyHelp {
+    background: url(img/emergency-help.png) no-repeat center center;
+}
+
+body .benefits .benefitsInside .benefitUnit .medicalStaff {
+    background: url(img/medical-stuff.png) no-repeat center center;
+}
+
+body .benefits .benefitsInside .benefitUnit .qualifiedDoctors {
+    background: url(img/qualified-doctors.png) no-repeat center center;
+}
+
+body .benefits .benefitsInside .benefitUnit .benefitUnitHead {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    margin: 30px 0;
+}
+
+body .benefits .benefitsInside .benefitUnit .benefitUnitDesc {
+    font-size: 14px;
+    font-family: "Open Sans Regular", sans-serif;
+    text-align: center;
+    color: #ffffff;
+}
+
+.why_choose_us {
+    width: 100%;
+}
+
+.whyChooseUs_head {
+    color: #494949;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 111px;
+    margin-bottom: 31px;
+    text-align: center;
+}
+
+.whyChooseUs_description {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #6a6a6a;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.whyChooseUs_blocks {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 337px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.whyChooseUs_unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.whyChooseUsHead {
+    padding-left: 95px;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    height: 75px;
+    line-height: 75px;
+    color: #6c6c6c;
+}
+
+.whyChooseUsDescription {
+    font-family: sans-serif;
+    color: #6a6a6a;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.whyChooseUs_woman {
+    background: url(img/choose_woman.png) no-repeat center bottom;
+    height: 598px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: end;
+}
+
+.whyChooseUsHead.choose1 {
+    background: url(img/professional1.png) no-repeat left center;
+}
+
+.whyChooseUsHead.choose2 {
+    background: url(img/professional2.png) no-repeat left center;
+}
+
+.whyChooseUsHead.choose3 {
+    background: url(img/professional3.png) no-repeat left center;
+}
+
+.whyChooseUsHead.choose4 {
+    background: url(img/professioanl4.png) no-repeat left center;
+}
+
+.achievements {
+    background: url(img/man-background.png) no-repeat center center #0079af;
+    min-height: 592px;
+
+}
+
+.achievements_blocks {
+    width: 1200px;
+    margin: 0 auto;
+    min-height: inherit;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.achievement_unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement_icon {
+    width: 120px;
+    height: 120px;
+    transition-duration: 0.5s;
+}
+
+.achievement_icon:hover {
+    transform: rotate(360deg);
+}
+
+.achievement_icon.happyCustomers {
+    background: url(img/achiev1.png) no-repeat center center;
+}
+
+.achievement_icon.topHospitality {
+    background: url(img/achiev2.png) no-repeat center center;
+}
+
+.achievement_icon.innovateApproach {
+    background: url(img/achiev3.png) no-repeat center center;
+}
+
+.achievement_icon.lungReplacement {
+    background: url(img/achiev4.png) no-repeat center center;
+}
+
+.achievement_counter {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.achievement_line {
+    width: 84px;
+    height: 6px;
+    background-color: #ffffff;
+    margin-bottom: 27px;
+}
+
+.achievement_text {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+}
+
+body .worksAndCreative {
+    width: 100%;
+}
+
+body .worksAndCreative .worksAndCreativeInside {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding-top: 100px;
+    grid-template-areas: "worksHead worksHead ourCreativeHead""worksDesc worksDesc creativeDesc""worksUnit1 worksUnit2 heartTreatment""worksData1 worksData2 heartTreatmentPoints""readMore2 readMore2 .";
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksHead {
+    grid-area: worksHead;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksHead,
+body .worksAndCreative .worksAndCreativeInside .ourCreativeHead {
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 45px;
+    color: #474747;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksDesc {
+    grid-area: worksDesc;
+}
+
+body .worksAndCreative .worksAndCreativeInside .ourCreativeHead {
+    grid-area: ourCreativeHead;
+}
+
+body .worksAndCreative .worksAndCreativeInside .creativeDesc {
+    grid-area: creativeDesc;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksDesc,
+body .worksAndCreative .worksAndCreativeInside .creativeDesc,
+body .worksAndCreative .worksAndCreativeInside .heartTreatmentText,
+body .worksAndCreative .worksAndCreativeInside .worksDataText {
+    font-family: "Open Sans Regular", sans-serif;
+    color: #6a6a6a;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksUnit1,
+body .worksAndCreative .worksAndCreativeInside .worksUnit2 {
+    width: 334px;
+    height: 210px;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksUnit1 {
+    background: url(img/works_creative1.png) no-repeat center center;
+    background-size: 100%;
+    grid-area: worksUnit1;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksUnit2 {
+    background: url(img/works_creative2.png) no-repeat center center;
+    background-size: 100%;
+    grid-area: worksUnit2;
+}
+
+body .worksAndCreative .worksAndCreativeInside .heartTreatment {
+    grid-area: heartTreatment;
+}
+
+body .worksAndCreative .worksAndCreativeInside .heartTreatment .heartTreatmentHead {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Montserrat Medium", sans-serif;
+    border-radius: 30px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: url(img/arrow.png) no-repeat 10px center, #0087be;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksData1 {
+    grid-area: worksData1;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksData2 {
+    grid-area: worksData2;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksData .worksDataHead {
+    font-family: "Montserrat Medium", sans-serif;
+    color: #474747;
+    font-size: 20px;
+}
+
+body .worksAndCreative .worksAndCreativeInside .worksData .worksDataDate {
+    font-family: "Montserrat Medium", sans-serif;
+    color: #0087be;
+    font-size: 15px;
+}
+
+body .worksAndCreative .worksAndCreativeInside .heartTreatmentPoints {
+    grid-area: heartTreatmentPoints;
+}
+
+body .worksAndCreative .worksAndCreativeInside .heartTreatmentPoints .treatmentPoint {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    color: #474747;
+    font-size: 20px;
+    font-family: "Montserrat Medium", sans-serif;
+    border-radius: 30px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: url(img/arrow.png) no-repeat 10px center, #e2e2e2;
+    margin-bottom: 12px;
+}
+
+body .worksAndCreative .worksAndCreativeInside .readMore2 {
+    grid-area: readMore2;
+    text-align: center;
+}
+
+body .worksAndCreative .worksAndCreativeInside .readMore2 button {
+    background-color: #1a9bdc;
+    box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+    width: 166px;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 18.25px;
+    transition-duration: .5s;
+}
+
+body .worksAndCreative .worksAndCreativeInside .readMore2 button:hover {
+    background-color: #37c3a8;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.gallery {
+    width: 1600px;
+    background: url(img/gallery_back.png) no-repeat center center #2eb39b;
+    min-height: 592px;
+    margin-top: 114px;
+}
+
+.galleryHead {
+    text-align: center;
+    padding-top: 94px;
+    margin-bottom: 38px;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.galleryDescription {
+    text-align: center;
+    font-family: "Open Sans Regular", sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 54px;
+    padding: 0 20px;
+}
+
+.galleryInsight {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 37px;
+    grid-column-gap: 34px;
+    justify-content: center;
+    padding-bottom: 94px;
+}
+
+.galleryInsight {
+    
+}
+.galleryFirstInsight {
+    transform: rotateY(90deg);
+    padding: 20px;
+    text-align: justify;
+    box-sizing: border-box;
+    background: #43b1d2;
+    position: absolute;
+    left: 0;
+    top:0;
+    width: inherit;
+    height: inherit;
+    transition-duration: .5s;
+    transition-timing-function: linear;
+}
+/*.galleryInsight img {
+    transition-duration: 0.3s;
+}
+
+.galleryInsight img:hover {
+    transform: scale(1.2, 1.2);
+} */
+
+.ourTeam {
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.ourTeamHead {
+    font-family: "Montserrat Bold", sans-serif;
+    color: #474747;
+    margin-bottom: 49px;
+    font-size: 45px;
+}
+
+.ourTeamDescription {
+    font-family: "Open Sans Regular", sans-serif;
+    color: #6a6a6a;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 84px;
+}
+
+.ourTeamInsight {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.teamName {
+    font-family: "Montserrat Medium", sans-serif;
+    color: #6a6a6a;
+    font-size: 25px;
+    margin-top: 29px;
+    margin-bottom: 15px;
+}
+
+.teamPosition {
+    margin-bottom: 32px;
+    font-family: "Montserrat Medium", sans-serif;
+    color: #6a6a6a;
+    font-size: 18px;
+}
+
+.teamSocials a {
+    color: #0087be;
+    font-size: 25px;
+    margin: 5px;
+}
+
+.teamSocials a i {
+    transition-duration: 0.3s;
+}
+
+.teamSocials a i:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.consultation {
+    width: 1600px;
+    background: #e2e2e2;
+    padding: 90px 0;
+}
+
+.consultationInsight {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.consultationText {
+    float: left;
+    font-family: "Montserrat Bold", sans-serif;
+    color: #6c6c6c;
+    font-size: 30px;
+}
+
+.consultationInsight button {
+    background-color: #1a9bdc;
+    box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+    width: 166px;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 18.25px;
+    float: right;
+    transition-duration: .5s;
+}
+
+.consultationInsight button:hover {
+    background-color: #37c3a8;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+footer {
+    background: #171717;
+    width: 1600px;
+}
+
+.footerInsight {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #6c6c6c;
+    font-size: 16px;
+    font-family: "Open Sans Regular", sans-serif;
+    grid-template-areas: "getInTouch quickLinks ourServices enquiryForm";
+}
+
+.footerHead {
+    font-family: "Open Sans Bold", sans-serif;
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 65px;
+}
+
+.getInTouchMail {
+    background: url(img/mail-icon.png) no-repeat left center;
+    padding-left: 80px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.getInTouchPhone {
+    background: url(img/phone-icon.png) no-repeat left center;
+    padding-left: 80px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.getInTouchAdress {
+    background: url(img/map-icon.png) no-repeat left center;
+    padding-left: 80px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.footerLinks a {
+    display: block;
+    color: inherit;
+    margin-bottom: 27px;
+    text-decoration: none;
+    background: url(img/arrow_small.png) no-repeat left center;
+    padding-left: 40px;
+    box-sizing: border-box;
+}
+
+.footerLinks a:hover {
+    background: url(img/arrow_small2.png) no-repeat left center;
+}
+
+.footerLinks a:hover {
+    color: #ffffff;
+}
+
+.enquiryForm input[type="text"],
+textarea {
+    color: #ffffff;
+    margin-bottom: 10px;
+    background: transparent;
+    border: 0;
+    width: 231px;
+    border-bottom: 1px solid #7f7f7f;
+    outline: none;
+}
+
+.enquiryForm input[type="submit"] {
+    background-color: #1a9bdc;
+    box-shadow: -4px 11px 40px 0 rgba(0, 1, 1, 0.2);
+    width: 166px;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: "Montserrat Regular", sans-serif;
+    font-size: 18.25px;
+    transition-duration: .5s;
+}
+
+.enquiryForm input[type="submit"]:hover {
+    background-color: #37c3a8;
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+}
+
+.copyright {
+    width: 1600px;
+    padding: 50px 0;
+    box-sizing: border-box;
+    color: #6c6c6c;
+    font-size: 13px;
+    font-family: "Open Sans Regular", sans-serif;
+    text-align: center;
+    background: #1a1a1a;
+}
